@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Genetrator</title>
+    <link rel="StyleSheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d179b06906.js" crossorigin="anonymous"></script>
+      <script src="script.js"></script>
+    
+</head>
+<body>
+    <div class="container">
+        <h2>Password Generator</h2>
+        <div class="result-container">
+            <span id="result"></span>
+                <button class="btn" id="clipboard">
+                    <i class="far fa-clipboard"></i>
+                </button>
+        </div>
+        <div class="setting">
+            <div class="settings">
+                <label>Password Length</label>
+               <input type="number" id="length" min="4" max="12" value="20">
+            </div>
+        <div class="settings">
+            <label>Include UpperCase Letter</label>
+            <input type="checkbox" id="UpperCase" checked>
+        </div>
+        <div class="settings">
+            <label>Include lowerCase Letter</label>
+            <input type="checkbox" id="lowerCase" checked>
+        </div>
+        <div class="settings">
+            <label>Include number Letter</label>
+            <input type="checkbox" id="number" checked>
+        </div>
+        <div class="settings">
+            <label>Include symbols Letter</label>
+            <input type="checkbox" id="symbols" checked>
+        </div>
+        
+    </div>
+    <button class="btn btn-larger" id="generate">Generate Password</button>
+</div>
+</body>
+</html>
